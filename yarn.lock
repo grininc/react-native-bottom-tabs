@@ -2721,8 +2721,9 @@ __metadata:
   resolution: "@bottom-tabs/expo-template@workspace:packages/expo-template"
   dependencies:
     "@babel/core": "npm:^7.28.4"
-    "@bottom-tabs/react-navigation": "npm:1.0.2"
+    "@bottom-tabs/react-navigation": "npm:1.0.3"
     "@expo/vector-icons": "npm:^14.0.2"
+    "@grininc/react-native-bottom-tabs": "workspace:*"
     "@react-navigation/native": "npm:^7.1.17"
     "@types/jest": "npm:^29.5.12"
     "@types/react": "npm:~18.3.12"
@@ -2745,7 +2746,6 @@ __metadata:
     react: "npm:^19.1.0"
     react-dom: "npm:18.3.1"
     react-native: "npm:0.81.4"
-    react-native-bottom-tabs: "npm:1.0.2"
     react-native-gesture-handler: "npm:^2.28.0"
     react-native-reanimated: "npm:^4.1.0"
     react-native-safe-area-context: "npm:^5.6.1"
@@ -2778,24 +2778,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bottom-tabs/react-navigation@npm:*, @bottom-tabs/react-navigation@npm:1.0.2, @bottom-tabs/react-navigation@workspace:packages/react-navigation":
+"@bottom-tabs/react-navigation@npm:1.0.3, @bottom-tabs/react-navigation@workspace:*, @bottom-tabs/react-navigation@workspace:packages/react-navigation":
   version: 0.0.0-use.local
   resolution: "@bottom-tabs/react-navigation@workspace:packages/react-navigation"
   dependencies:
+    "@grininc/react-native-bottom-tabs": "workspace:*"
     "@react-navigation/native": "npm:^7.1.17"
     "@types/color": "npm:^4.2.0"
     color: "npm:^5.0.0"
     jest: "npm:^29.7.0"
     react: "npm:^19.1.0"
     react-native: "npm:0.81.1"
-    react-native-bottom-tabs: "npm:*"
     react-native-builder-bob: "npm:^0.40.13"
     typescript: "npm:^5.9.2"
   peerDependencies:
+    "@grininc/react-native-bottom-tabs": "*"
     "@react-navigation/native": ">=7"
     react: "*"
     react-native: "*"
-    react-native-bottom-tabs: "*"
   languageName: unknown
   linkType: soft
 
@@ -3999,6 +3999,28 @@ __metadata:
   checksum: 10/4d2adaf531d24154898b858d3d0f3b4ec272fa08bb628f94cadee5b1eb505cc1f3a6b0ab7c1cb3d55af0f22c2534b4a9781a6fe7293dc2062fc5784eb376b0bb
   languageName: node
   linkType: hard
+
+"@grininc/react-native-bottom-tabs@workspace:*, @grininc/react-native-bottom-tabs@workspace:packages/react-native-bottom-tabs":
+  version: 0.0.0-use.local
+  resolution: "@grininc/react-native-bottom-tabs@workspace:packages/react-native-bottom-tabs"
+  dependencies:
+    "@expo/config-plugins": "npm:^7.0.0 || ^8.0.0"
+    "@react-native/babel-plugin-codegen": "npm:0.81.1"
+    "@react-native/eslint-config": "npm:0.81.1"
+    "@types/jest": "npm:^29.5.5"
+    "@types/react": "npm:^18.2.44"
+    react: "npm:^19.1.0"
+    react-freeze: "npm:^1.0.0"
+    react-native: "npm:0.81.1"
+    react-native-builder-bob: "npm:^0.40.13"
+    sf-symbols-typescript: "npm:^2.0.0"
+    typescript: "npm:^5.9.2"
+    use-latest-callback: "npm:^0.2.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
 
 "@hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.3.0":
   version: 9.3.0
@@ -15944,7 +15966,8 @@ __metadata:
     "@babel/core": "npm:^7.28.4"
     "@babel/preset-env": "npm:^7.28.3"
     "@babel/runtime": "npm:^7.28.4"
-    "@bottom-tabs/react-navigation": "npm:*"
+    "@bottom-tabs/react-navigation": "workspace:*"
+    "@grininc/react-native-bottom-tabs": "workspace:*"
     "@react-native-community/cli": "npm:^20.0.2"
     "@react-native/babel-preset": "npm:^0.81.4"
     "@react-native/metro-config": "npm:0.81.4"
@@ -15959,7 +15982,6 @@ __metadata:
     color: "npm:^5.0.0"
     react: "npm:^19.1.0"
     react-native: "npm:^0.81.4"
-    react-native-bottom-tabs: "npm:*"
     react-native-builder-bob: "npm:^0.40.13"
     react-native-edge-to-edge: "npm:^1.7.0"
     react-native-gesture-handler: "npm:^2.28.0"
@@ -15968,28 +15990,6 @@ __metadata:
     react-native-screens: "npm:^4.16.0"
     react-native-test-app: "npm:^4.4.10"
     react-native-vector-icons: "npm:^10.2.0"
-  languageName: unknown
-  linkType: soft
-
-"react-native-bottom-tabs@npm:*, react-native-bottom-tabs@npm:1.0.2, react-native-bottom-tabs@workspace:packages/react-native-bottom-tabs":
-  version: 0.0.0-use.local
-  resolution: "react-native-bottom-tabs@workspace:packages/react-native-bottom-tabs"
-  dependencies:
-    "@expo/config-plugins": "npm:^7.0.0 || ^8.0.0"
-    "@react-native/babel-plugin-codegen": "npm:0.81.1"
-    "@react-native/eslint-config": "npm:0.81.1"
-    "@types/jest": "npm:^29.5.5"
-    "@types/react": "npm:^18.2.44"
-    react: "npm:^19.1.0"
-    react-freeze: "npm:^1.0.0"
-    react-native: "npm:0.81.1"
-    react-native-builder-bob: "npm:^0.40.13"
-    sf-symbols-typescript: "npm:^2.0.0"
-    typescript: "npm:^5.9.2"
-    use-latest-callback: "npm:^0.2.1"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
   languageName: unknown
   linkType: soft
 

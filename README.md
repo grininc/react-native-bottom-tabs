@@ -4,19 +4,21 @@
   </picture>
 </a>
 <p align="center">
-  <strong><a href="https://callstackincubator.github.io/react-native-bottom-tabs/">React Native Bottom Tabs</a> that use native platform primitives.</strong><br>
+  <strong><a href="https://grininc.github.io/react-native-bottom-tabs/">React Native Bottom Tabs</a> that use native platform primitives.</strong><br>
 </p>
 
 <div align="center">
 
 [![mit licence](https://img.shields.io/dub/l/vibe-d.svg?style=for-the-badge)](https://github.com/okwasniewski/react-native-bottom-tabs/blob/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/react-native-bottom-tabs?style=for-the-badge)](https://www.npmjs.org/package/react-native-bottom-tabs)
-[![npm downloads](https://img.shields.io/npm/dt/react-native-bottom-tabs.svg?style=for-the-badge)](https://www.npmjs.org/package/react-native-bottom-tabs)
-[![npm downloads](https://img.shields.io/npm/dm/react-native-bottom-tabs.svg?style=for-the-badge)](https://www.npmjs.org/package/react-native-bottom-tabs)
+[![npm version](https://img.shields.io/npm/v/@grininc/react-native-bottom-tabs?style=for-the-badge)](https://www.npmjs.org/package/@grininc/react-native-bottom-tabs)
+[![npm downloads](https://img.shields.io/npm/dt/@grininc/react-native-bottom-tabs.svg?style=for-the-badge)](https://www.npmjs.org/package/@grininc/react-native-bottom-tabs)
+[![npm downloads](https://img.shields.io/npm/dm/@grininc/react-native-bottom-tabs.svg?style=for-the-badge)](https://www.npmjs.org/package/@grininc/react-native-bottom-tabs)
 
 </div>
 
 https://github.com/user-attachments/assets/09e96ac3-827d-4ac0-add0-e7b88ee9197c
+
+> **Note:** This is a fork of [react-native-bottom-tabs](https://github.com/callstackincubator/react-native-bottom-tabs) maintained by [@grininc](https://github.com/grininc). The original project is maintained by [Callstack](https://github.com/callstackincubator).
 
 ## Supported Platforms
 
@@ -35,12 +37,11 @@ https://github.com/user-attachments/assets/09e96ac3-827d-4ac0-add0-e7b88ee9197c
 
 | Name                                                                         |                                                                      Latest Version                                                                       |
 | ---------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [react-native-bottom-tabs](/packages/react-native-bottom-tabs)               | [![badge](https://img.shields.io/npm/v/react-native-bottom-tabs?style=for-the-badge)](https://www.npmjs.com/package/react-native-bottom-tabs)                             |
-| [@bottom-tabs/react-navigation](/packages/react-navigation)                  | [![badge](https://img.shields.io/npm/v/@bottom-tabs/react-navigation.svg?style=for-the-badge)](https://www.npmjs.com/package/@bottom-tabs/react-navigation)                   |
+| [@grininc/react-native-bottom-tabs](/packages/react-native-bottom-tabs)               | [![badge](https://img.shields.io/npm/v/@grininc/react-native-bottom-tabs?style=for-the-badge)](https://www.npmjs.com/package/@grininc/react-native-bottom-tabs)                             |
 
 ## Documentation
 
-The full documentation can be found on our [website](http://incubator.callstack.com/react-native-bottom-tabs/).
+The full documentation can be found on our [website](https://grininc.github.io/react-native-bottom-tabs/).
 
 ## Contributing
 

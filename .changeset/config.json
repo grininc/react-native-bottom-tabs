@@ -1,19 +1,16 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.4/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "callstackincubator/react-native-bottom-tabs" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "grininc/react-native-bottom-tabs" }],
   "commit": false,
-  "fixed": [
-    [
-      "react-native-bottom-tabs",
-      "@bottom-tabs/react-navigation"
-    ]
-  ],
+  "fixed": [],
   "linked": [],
   "access": "public",
   "baseBranch": "main",
   "ignore": [
     "react-native-bottom-tabs-docs",
-    "react-native-bottom-tabs-example"
+    "react-native-bottom-tabs-example",
+    "@bottom-tabs/react-navigation",
+    "@bottom-tabs/expo-template"
   ],
   "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
     "onlyUpdatePeerDependentsWhenOutOfRange": true,

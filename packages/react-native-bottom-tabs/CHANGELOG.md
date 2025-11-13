@@ -1,5 +1,11 @@
 # react-native-bottom-tabs
 
+## 1.0.3
+
+### Patch Changes
+
+- [#446](https://github.com/callstackincubator/react-native-bottom-tabs/pull/446) [`e419b58`](https://github.com/callstackincubator/react-native-bottom-tabs/commit/e419b58b22abc275afeffd91c2731cf5bbbd80c2) Thanks [@johankasperi](https://github.com/johankasperi)! - feat(iOS): [experimental] implement bottom accessory view fix
+
 ## 1.0.2
 
 ### Patch Changes
