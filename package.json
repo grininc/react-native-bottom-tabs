@@ -17,7 +17,8 @@
     "build:ios": "turbo run build:ios",
     "build:macos": "turbo run build:macos",
     "version-packages": "changeset version && yarn install --no-immutable",
-    "publish-packages": "turbo run build lint && changeset version && changeset publish"
+    "publish-packages": "turbo run build lint && changeset version && changeset publish",
+    "publish:github": "yarn build && cd packages/react-native-bottom-tabs && npm publish --registry=https://npm.pkg.github.com"
   },
   "resolutions": {
     "@types/react": "^18.2.44"

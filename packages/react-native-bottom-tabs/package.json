@@ -59,7 +59,8 @@
   "homepage": "https://github.com/grininc/react-native-bottom-tabs#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "access": "public"
+    "access": "public",
+    "@grininc:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@expo/config-plugins": "^7.0.0 || ^8.0.0",

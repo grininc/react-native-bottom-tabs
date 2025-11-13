@@ -14,6 +14,7 @@ jobs:
       contents: write # to create release (changesets/action)
       id-token: write # Required for provenance
       pull-requests: write # to create pull request (changesets/action)
+      packages: write # to publish to GitHub Package Registry
     name: Release
     runs-on: ubuntu-latest
     steps:
@@ -29,6 +30,7 @@ jobs:
         run: yarn
 
       - name: Create Release Pull Request or Publish to NPM
+        id: changesets
         uses: changesets/action@v1
         with:
           version: yarn version-packages
@@ -39,3 +41,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Setup Node.js for GitHub Package Registry
+        if: steps.changesets.outputs.published == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@grininc'
+
+      - name: Publish to GitHub Package Registry
+        if: steps.changesets.outputs.published == 'true'
+        run: |
+          cd packages/react-native-bottom-tabs
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
